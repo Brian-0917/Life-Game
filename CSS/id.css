@@ -1,0 +1,137 @@
+@import url(../CSS/headuse.css);
+.social_id {
+    width: 50%;
+    height: 300px;
+    border: 3px solid gray;
+    margin: 0 auto;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.social_id h2 {
+    padding: 10px;
+}
+
+.social_table {
+    margin: 0 auto;
+    padding: 10px;
+    border-collapse: separate;
+    border-spacing: 40px 10px;
+}
+
+.social_id td {
+    width: 400px;
+    /* border: 1px solid deeppink; */
+    height: 80px;
+    border-radius: 50px;
+    color: white;
+}
+
+.social_table i {
+    font-size: 32px;
+    /* float: left; */
+    /* margin-left: 25px; */
+    width: 100%;
+}
+
+.social_id span {
+    font-size: 24px;
+    /* margin-right: 40px; */
+    line-height: 32px;
+}
+
+.facebook {
+    background-color: rgb(24, 119, 242);
+}
+
+.apple {
+    background-color: black;
+}
+
+.twitter {
+    background-color: rgb(28, 161, 241);
+}
+
+.twitch {
+    background-color: rgb(145, 71, 255);
+}
+
+.id_create {
+    width: 50%;
+    height: 800px;
+    border: 3px solid gray;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.id_create h2 {
+    padding: 50px;
+    color: gray;
+}
+
+.id_main {
+    border-collapse: separate;
+    border-top: 3px solid #e6e6e6;
+    border-spacing: 200px 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+.id_main td {
+    border-bottom: 1px solid #d6d6d6;
+    width: 200px;
+}
+
+.id_main td input {
+    width: 100%;
+    border: none;
+    height: 24px;
+}
+
+.subscription {
+    width: 80%;
+    height: 200px;
+    /* border: 1px solid saddlebrown; */
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.subscription input {
+    display: inline;
+}
+
+.subscription p {
+    display: inline-block;
+}
+
+.subscription ul {
+    list-style: none;
+    border-top: 3px solid #d6d6d6;
+    padding: 20px;
+}
+
+.id_create select {
+    width: 100%;
+}
+
+.subscription button {
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: gray;
+    font-size: 16px;
+}
+
+.sub_but {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 3px solid #d6d6d6;
+    margin-top: 30px;
+}

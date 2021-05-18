@@ -1,0 +1,217 @@
+@import "headuse.css";
+@import "footuse.css";
+input[type="radio"] {
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+
+ul.slides_in {
+    position: relative;
+    width: 800px;
+    height: 350px;
+    list-style: none;
+    margin: 10px;
+    padding: 0px;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+li.slides_in {
+    margin: 0px;
+    padding: 0px;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica;
+    font-size: 20px;
+    transition: .5s transform ease-in-out;
+    /* border: 1px solid red; */
+}
+
+li.slides_in span {
+    border: 1px solid gray;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    width: 100%;
+    background-color: rgba(44, 43, 43, 0.5);
+    text-align: center;
+    padding: 5px;
+}
+
+.slides_in:nth-of-type(1) {
+    background-image: url(../news/news_img/village.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slides_in:nth-of-type(2) {
+    background-image: url(../news/news_img/six.jpg);
+    background-size: cover;
+    left: 100%;
+}
+
+.slides_in:nth-of-type(3) {
+    background-image: url(../news/news_img/dragen.jpg);
+    background-size: cover;
+    left: 200%;
+}
+
+.controls-visible {
+    /* position: relative; */
+    width: 100%;
+    /* bottom: 20px; */
+    text-align: center;
+}
+
+.controls-visible label {
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    background-color: rgba(252, 92, 92, 0.2);
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.controls-visible label:hover {
+    background-color: red;
+    -o-transition: color .50s linear;
+    -webkit-transition: color .50s linear;
+    -moz-transition: color .50s linear;
+    transition: color .50s linear;
+    cursor: pointer;
+}
+
+.slides_in input[type="radio"]:nth-of-type(1):checked~.slides_in {
+    transform: translateX(0%);
+}
+
+.slides_in input[type="radio"]:nth-of-type(2):checked~.slides_in {
+    transform: translateX(-100%);
+}
+
+.slides_in input[type="radio"]:nth-of-type(3):checked~.slides_in {
+    transform: translateX(-200%);
+}
+
+.news_main {
+    width: 100%;
+}
+
+.news_about {
+    width: 1200px;
+    /* border: 1px solid gray; */
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.news_about li img {
+    width: 200px;
+    padding-right: 5px;
+}
+
+.news_about li {
+    display: flex;
+    /* border: 1px solid gray; */
+    border-bottom: 1px dotted gray;
+    padding: 10px;
+}
+
+.dx_inside {
+    font-size: 16px;
+    padding-left: 5px;
+    color: rgb(19, 19, 19);
+}
+
+.dx {
+    color: gray;
+    padding-bottom: 5px;
+}
+
+.dx:hover {
+    color: red;
+    -o-transition: color .20s linear;
+    -webkit-transition: color .20s linear;
+    -moz-transition: color .20s linear;
+    transition: color .20s linear;
+    cursor: pointer;
+}
+
+a.dx_goread {
+    color: gray;
+    display: inline-block;
+    font-size: 18px;
+}
+
+a.dx_goread:hover {
+    color: red;
+    -o-transition: color .20s linear;
+    -webkit-transition: color .20s linear;
+    -moz-transition: color .20s linear;
+    transition: color .20s linear;
+    cursor: pointer;
+}
+
+.like {
+    width: 100%;
+    text-align: right;
+}
+
+.like .las.la-heart {
+    color: gray;
+}
+
+.las.la-heart:hover {
+    color: red;
+    -o-transition: color .20s linear;
+    -webkit-transition: color .20s linear;
+    -moz-transition: color .20s linear;
+    transition: color .20s linear;
+    cursor: pointer;
+}
+
+.page_block {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.pages {
+    display: flex;
+    list-style: none;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 5px;
+}
+
+.pages li {
+    border-left: 1px solid rgb(217, 217, 217);
+}
+
+.pages li a {
+    font-size: 16px;
+    display: inline-block;
+    width: 1.5rem;
+    text-align: center;
+    color: rgb(126, 126, 126);
+}
+
+.pages li:first-child {
+    border-left: none;
+}
+
+.page li:last-child {
+    border-right: none;
+}

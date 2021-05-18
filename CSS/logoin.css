@@ -1,0 +1,111 @@
+@import url(./headuse.css);
+@import url(./footuse.css);
+.logo_bk {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 0px;
+}
+
+form {
+    border: 3px solid gray;
+    width: 350px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    /* background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%); */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.akaunndo,
+.pasuwaado {
+    font-size: 30px;
+    border: 2px solid gray;
+    margin: 20px;
+    padding-left: 10px;
+    /* border-style: none; */
+}
+
+.pasuwaado_get {
+    outline: none;
+    /* border: 1px solid red; */
+    font-size: 20px;
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    vertical-align: center;
+    padding: 5px;
+    /* text-align: center; */
+    border-style: none;
+    padding-bottom: 5px;
+}
+
+label>i {
+    color: gray;
+}
+
+.check {
+    text-align: center;
+    font-size: 16px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    margin: 10px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.touroku {
+    background-color: rgb(250, 84, 84);
+    color: white;
+}
+
+p.now_touroku {
+    text-align: center;
+    padding-top: 20px;
+}
+
+p.now_touroku a {
+    color: gray;
+}
+
+.social_icon {
+    text-align: center;
+}
+
+.social_icon i {
+    font-size: 36px;
+}
+
+.social_icon i:hover {
+    color: rgb(231, 1, 20);
+    -o-transition: color .50s linear;
+    -webkit-transition: color .50s linear;
+    -moz-transition: color .50s linear;
+    transition: color .50s linear;
+    cursor: pointer;
+    background-color: #e6e6e6;
+    -o-transition: background-color .50s linear;
+    -webkit-transition: background-color .50s linear;
+    -moz-transition: background-color .50s linear;
+    transition: background-color .50s linear;
+}
+
+.social_button a:hover {
+    color: rgb(231, 1, 20);
+    -o-transition: color .50s linear;
+    -webkit-transition: color .50s linear;
+    -moz-transition: color .50s linear;
+    transition: color .50s linear;
+    cursor: pointer;
+}
