@@ -1,5 +1,25 @@
 @import url(../CSS/headuse.css);
 @import url(../CSS/footuse.css);
+.hamberger {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.hamberger a {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hamberger li {
+    display: inline-block;
+    list-style: none;
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .main {
     width: 80%;
     height: 1850px;
