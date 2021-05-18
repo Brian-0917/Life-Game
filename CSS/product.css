@@ -7,15 +7,23 @@
     margin-top: 10px;
 }
 
-.shop_right {
+
+/* .shop_right {
     width: 180px;
     height: 600px;
     border: 1px solid black;
     position: sticky;
     top: 0;
-    float: right;
+    float: left;
     background-color: rgb(232, 1, 20);
-    /* margin-bottom: 20px; */
+   
+} */
+
+.shop_right {
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
 }
 
 .title_block {
@@ -76,6 +84,7 @@
 
 .icon i.las.la-award {
     color: rgb(255, 244, 97);
+    opacity: .8;
 }
 
 .icon p {
@@ -91,7 +100,10 @@
     z-index: 100;
     font-size: 80px;
     position: relative;
-    color: silver;
+    color: rgb(42, 182, 238);
+    background-color: #00000050;
+    display: inline;
+    border-radius: 20px;
 }
 
 .icon-2 p {
@@ -107,6 +119,9 @@
     font-size: 80px;
     position: relative;
     color: rgba(252, 116, 5, 0.767);
+    background-color: #00000020;
+    display: inline;
+    border-radius: 20px;
 }
 
 .icon-3 p {
@@ -122,6 +137,9 @@
     font-size: 80px;
     position: relative;
     color: rgba(5, 253, 158, 0.767);
+    background-color: #00000020;
+    display: inline;
+    border-radius: 20px;
 }
 
 .icon-4 p {
@@ -165,21 +183,33 @@
 } */
 
 .senntaku {
-    border: 1px solid gold;
+    width: 200px;
+    border: 1px solid #d6d6d6;
     text-align: center;
-    color: white;
+    color: #d6d6d6;
     margin: 10px;
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    position: sticky;
+    top: 30px;
+    background-color: rgb(197, 4, 20);
+    border-radius: 5px;
+}
+
+h1.senntaku_h1 {
+    padding: 5px;
 }
 
 li.senntaku_iku {
-    margin: 20px;
+    padding: 15px;
     border-top: 1px solid white;
     list-style: none;
-    padding: 20px;
+    font-size: 24px;
 }
 
 a.senntaku_select {
-    color: white;
+    color: #d6d6d6;
 }
 
 hr {
