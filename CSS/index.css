@@ -191,8 +191,8 @@
     
     .new_main {
         display: grid;
-        grid-template-columns: 350px 350px 350px 350px;
-        grid-template-rows: 400px;
+        grid-template-columns: 250px 250px 250px 250px;
+        grid-template-rows: 350px;
         grid-auto-flow: row;
         /* border: 1px solid black; */
         justify-content: center;
@@ -202,8 +202,8 @@
     }
     
     .new_img {
-        width: 350px;
-        height: 250px;
+        width: 250px;
+        height: 150px;
         border-radius: 5px;
     }
     
