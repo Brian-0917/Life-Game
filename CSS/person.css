@@ -1,0 +1,55 @@
+@import url(../CSS/headuse.css);
+@import url(../CSS/footuse.css);
+.container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid darkblue;
+    margin-top: 30px;
+    display: flex;
+}
+
+.rank {
+    width: 20%;
+    height: 500px;
+    border: 1px solid chartreuse;
+}
+
+.rank ul {
+    list-style: none;
+}
+
+.id_list {
+    width: 80%;
+    height: 800px;
+    border: 1px solid crimson;
+}
+
+.id_img {
+    width: 100%;
+    height: 20%;
+    border: 1px solid cornflowerblue;
+    display: flex;
+}
+
+.id_img img {
+    width: 150px;
+    height: 100%;
+}
+
+.id_img ul {
+    list-style: none;
+    margin: 5px;
+}
+
+.id_img li {
+    padding: 5px;
+    font-size: 24px;
+}
+
+.wallet {
+    width: 500px;
+    height: 100%;
+    border: 1px solid darkcyan;
+    margin: 0 auto;
+}
