@@ -80,6 +80,8 @@
     border-spacing: 100px 30px;
     display: block;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .id_main td {
