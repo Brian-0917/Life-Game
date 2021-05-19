@@ -147,10 +147,6 @@
         position: relative;
     }
     
-    .banner {
-        position: relative;
-    }
-    
     .banner-content {
         position: absolute;
         width: 1080px;
