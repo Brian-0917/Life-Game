@@ -341,7 +341,7 @@ input {
 }
 
 .commingsoon {
-    width: 80%;
+    width: 100%;
     /* border: 1px solid brown; */
     margin: 0 auto;
     display: flex;
