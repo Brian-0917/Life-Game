@@ -15,8 +15,8 @@ input[type="radio"] {
 
 ul.slides_in {
     position: relative;
-    width: 800px;
-    height: 350px;
+    width: 1200px;
+    height: 400px;
     list-style: none;
     margin: 10px;
     padding: 0px;
@@ -136,12 +136,12 @@ li.slides_in span {
 }
 
 .dx {
-    color: gray;
+    color: rgb(104, 0, 0);
     padding-bottom: 5px;
 }
 
 .dx:hover {
-    color: red;
+    color: gray;
     -o-transition: color .20s linear;
     -webkit-transition: color .20s linear;
     -moz-transition: color .20s linear;
@@ -186,7 +186,8 @@ a.dx_goread:hover {
     display: block;
     width: fit-content;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .pages {

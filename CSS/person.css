@@ -1,55 +1,127 @@
-@import url(../CSS/headuse.css);
-@import url(../CSS/footuse.css);
-.container {
-    width: 60%;
-    height: 100%;
-    margin: 0 auto;
-    border: 1px solid darkblue;
-    margin-top: 30px;
-    display: flex;
-}
-
-.rank {
-    width: 20%;
-    height: 500px;
-    border: 1px solid chartreuse;
-}
-
-.rank ul {
-    list-style: none;
-}
-
-.id_list {
-    width: 80%;
-    height: 800px;
-    border: 1px solid crimson;
-}
-
-.id_img {
-    width: 100%;
-    height: 20%;
-    border: 1px solid cornflowerblue;
-    display: flex;
-}
-
-.id_img img {
-    width: 150px;
-    height: 100%;
-}
-
-.id_img ul {
-    list-style: none;
-    margin: 5px;
-}
-
-.id_img li {
-    padding: 5px;
-    font-size: 24px;
-}
-
-.wallet {
-    width: 500px;
-    height: 100%;
-    border: 1px solid darkcyan;
-    margin: 0 auto;
-}
+    @import url(../CSS/headuse.css);
+    @import url(../CSS/footuse.css);
+    .container {
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+        border: 5px solid gray;
+        margin-top: 30px;
+        display: flex;
+    }
+    
+    .rank {
+        width: 20%;
+        height: 30%;
+        /* border: 1px solid chartreuse; */
+    }
+    
+    .rank ul {
+        list-style: none;
+        text-align: center;
+    }
+    
+    .rank li {
+        border-bottom: 1px solid rgb(255, 255, 255);
+        padding: 10px;
+        font-size: 24px;
+        background-color: #4d4d4d;
+        color: white;
+    }
+    
+    .id_list {
+        width: 80%;
+        /* height: 800px; */
+        border-left: 1px solid gray;
+    }
+    
+    .id_img {
+        width: 100%;
+        /* height: 30%; */
+        border-bottom: 1px solid gray;
+        display: flex;
+        position: relative;
+    }
+    
+    .id_img img {
+        width: 150px;
+        height: 100%;
+    }
+    
+    .id_img ul {
+        list-style: none;
+        margin: 5px;
+    }
+    
+    .id_img li {
+        padding: 5px;
+        font-size: 16px;
+    }
+    
+    .wallet {
+        width: 50%;
+        height: 100%;
+        /* border: 1px solid darkcyan; */
+        position: absolute;
+        right: 0;
+        background-color: #e6e6e6;
+    }
+    
+    .wallet h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    
+    .wallet table {
+        margin: 0 auto;
+        border-collapse: separate;
+        border-spacing: 20px;
+        font-size: 24px;
+    }
+    
+    .wallet button {
+        border: 5px double white;
+        background-color: red;
+        color: white;
+        width: 120px;
+        height: 50px;
+        font-size: 24px;
+    }
+    
+    .game_list {
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid greenyellow; */
+        margin: 0 auto;
+    }
+    
+    .game_list h2 {
+        padding: 10px;
+        /* border-bottom: 1px solid gray; */
+    }
+    
+    .game_list table {
+        margin: 0 auto;
+        border-collapse: separate;
+        border-spacing: 0px;
+        font-size: 24px;
+        font-weight: 600;
+        /* border: 1px solid red; */
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .game_list table td {
+        border-bottom: 1px solid gray;
+        /* border-bottom: 1px solid gray; */
+        width: 250px;
+        padding: 5px;
+    }
+    
+    .game_list table tr:last-child td {
+        border-bottom: none;
+    }
+    
+    .souko {
+        border-bottom: 1px solid gray;
+    }

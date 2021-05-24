@@ -1,29 +1,144 @@
 @import url(./headuse.css);
 @import url(./footuse.css);
-.shop_top {
-    width: 100%;
+.rank_border {
+    width: 60%;
+    height: 500px;
     /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
+}
+
+input[type="radio"] {
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+
+ul.slides_in {
+    position: relative;
+    width: 900px;
+    height: 500px;
+    list-style: none;
+    margin: 10px;
+    padding: 0px;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+li.slides_in {
+    margin: 0px;
+    padding: 0px;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica;
+    font-size: 20px;
+    transition: .5s transform ease-in-out;
+    /* border: 1px solid red; */
+}
+
+li.slides_in span {
+    border: 1px solid gray;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    width: 100%;
+    background-color: rgba(44, 43, 43, 0.5);
+    text-align: left;
+    padding: 5px;
+}
+
+ul.rank {
+    list-style: none;
+}
+
+li.slides_in i {
+    font-size: 24px;
+    color: gold;
+}
+
+.slides_in:nth-of-type(1) {
+    background-image: url(../news/news_img/village.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slides_in:nth-of-type(2) {
+    background-image: url(../product_img/main/hood_play.jpg);
+    background-size: cover;
+    left: 100%;
+}
+
+.slides_in:nth-of-type(3) {
+    background-image: url(../product_img/main/NEIIR_PLAY.jpg);
+    background-size: cover;
+    left: 200%;
+}
+
+.controls-visible {
+    /* position: relative; */
+    width: 100%;
+    /* bottom: 20px; */
+    text-align: center;
+}
+
+.controls-visible label {
+    display: inline-block;
+    width: 300px;
+    height: 155px;
+    background-color: rgba(252, 92, 92, 0.2);
     margin-top: 10px;
 }
 
+.first {
+    background-image: url(../product_img/main/village.jpg);
+    background-size: cover;
+    color: rgb(204, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+}
 
-/* .shop_right {
-    width: 180px;
-    height: 600px;
-    border: 1px solid black;
-    position: sticky;
-    top: 0;
-    float: left;
-    background-color: rgb(232, 1, 20);
+.second {
+    background-image: url(../product_img/main/HOOD.jpg);
+    background-size: cover;
+}
 
-} */
+.third {
+    background-image: url(../product_img/main/neir.jpg);
+    background-size: cover;
+}
 
-.shop_right {
-    width: 80%;
-    height: 100%;
-    /* border: 1px solid red; */
-    margin: 0 auto;
+.controls-visible label:hover {
+    background-color: red;
+    -o-transition: color .50s linear;
+    -webkit-transition: color .50s linear;
+    -moz-transition: color .50s linear;
+    transition: color .50s linear;
+    cursor: pointer;
+}
+
+.slides_in input[type="radio"]:nth-of-type(1):checked~.slides_in {
+    transform: translateX(0%);
+}
+
+.slides_in input[type="radio"]:nth-of-type(2):checked~.slides_in {
+    transform: translateX(-100%);
+}
+
+.slides_in input[type="radio"]:nth-of-type(3):checked~.slides_in {
+    transform: translateX(-200%);
 }
 
 .title_block {
@@ -40,147 +155,6 @@
     /* border-bottom: 1px solid rgb(217, 217, 217); */
     padding: 20px;
 }
-
-.shop_in {
-    width: 800px;
-    height: 500px;
-    /* border: 1px solid green; */
-    position: relative;
-    margin: 0 auto;
-    margin-bottom: 5px;
-}
-
-.shop_in-text {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    width: 100%;
-    background-color: rgba(44, 43, 43, 0.5);
-    height: 100px;
-}
-
-.shop_in-text h2 {
-    margin-left: 5px;
-}
-
-.shop_in-text p {
-    margin-left: 5px;
-}
-
-.shoptop_img {
-    width: 800px;
-    height: 500px;
-    display: block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-}
-
-.icon {
-    z-index: 100;
-    font-size: 80px;
-    position: relative;
-}
-
-.icon i.las.la-award {
-    color: rgb(255, 244, 97);
-    opacity: .8;
-}
-
-.icon p {
-    position: absolute;
-    top: 17px;
-    font-size: 30px;
-    left: 32px;
-    font-weight: 600;
-    color: rgb(255, 244, 97)
-}
-
-.icon-2 {
-    z-index: 100;
-    font-size: 80px;
-    position: relative;
-    color: rgb(42, 182, 238);
-    background-color: #00000050;
-    display: inline;
-    border-radius: 20px;
-}
-
-.icon-2 p {
-    position: absolute;
-    top: 17px;
-    font-size: 30px;
-    left: 32px;
-    font-weight: 600;
-}
-
-.icon-3 {
-    z-index: 100;
-    font-size: 80px;
-    position: relative;
-    color: rgba(252, 116, 5, 0.767);
-    background-color: #00000020;
-    display: inline;
-    border-radius: 20px;
-}
-
-.icon-3 p {
-    position: absolute;
-    top: 17px;
-    font-size: 30px;
-    left: 32px;
-    font-weight: 600;
-}
-
-.icon-4 {
-    z-index: 100;
-    font-size: 80px;
-    position: relative;
-    color: rgba(5, 253, 158, 0.767);
-    background-color: #00000020;
-    display: inline;
-    border-radius: 20px;
-}
-
-.icon-4 p {
-    position: absolute;
-    top: 17px;
-    font-size: 30px;
-    left: 32px;
-    font-weight: 600;
-}
-
-
-/* 
-.icon {
-    z-index: 100;
-    color: rgb(247, 224, 97);
-    font-size: 80px;
-    position: relative;
-}
-
-.icon p {
-    position: absolute;
-    top: 17px;
-    font-size: 30px;
-    left: 32px;
-    font-weight: 600;
-}
-
-.icon {
-    z-index: 100;
-    color: rgb(247, 224, 97);
-    font-size: 80px;
-    position: relative;
-}
-
-.icon p {
-    position: absolute;
-    top: 17px;
-    font-size: 30px;
-    left: 32px;
-    font-weight: 600;
-} */
 
 .senntaku {
     width: 200px;

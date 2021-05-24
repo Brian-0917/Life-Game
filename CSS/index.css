@@ -212,12 +212,14 @@
     .new_img {
         width: 250px;
         height: 150px;
-        border-radius: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
     
     .grid_esport {
         box-shadow: 0 0 10px #000;
-        border-radius: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
         box-sizing: border-box;
     }
     
@@ -225,9 +227,12 @@
         color: rgb(180, 180, 180);
     }
     
-    .grid_esport p,
-    h3 {
+    .grid_esport h3 {
         padding: 5px;
+    }
+    
+    .grid_esport p {
+        padding: 10px;
     }
     
     .grid_esport a:hover {
@@ -280,13 +285,13 @@
     }
     
     .dx {
-        color: gray;
+        color: rgb(104, 0, 0);
         padding-bottom: 5px;
         padding-left: 5px;
     }
     
     .dx:hover {
-        color: red;
+        color: gray;
         -o-transition: color .20s linear;
         -webkit-transition: color .20s linear;
         -moz-transition: color .20s linear;
@@ -335,8 +340,9 @@
     
     .footer {
         height: 20%;
-        background-color: rgb(255, 36, 54);
-        color: rgb(207, 207, 207, );
+        background-color: rgb(155, 155, 155);
+        color: rgb(83, 83, 83);
+        ;
         text-align: center;
         margin-top: 10px;
         border-top: 5px solid gray;
@@ -349,7 +355,7 @@
     
     .social_icon a {
         font-size: 36px;
-        color: rgb(207, 207, 207);
+        color: rgb(83, 83, 83);
         text-decoration: none;
     }
     
@@ -360,5 +366,6 @@
     
     .footer span a {
         text-decoration: none;
-        color: rgb(207, 207, 207);
+        color: rgb(83, 83, 83);
+        ;
     }
