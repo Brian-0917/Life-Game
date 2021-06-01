@@ -10,6 +10,23 @@
     margin: 0 auto;
 }
 
+@media (max-width: 1150px) {
+    div.rank_border {
+        height: 300px;
+    }
+    div.slides ul.slides_in {
+        width: 500px;
+        height: 300px;
+    }
+    div.controls-visible ul.rank li label {
+        width: 138px;
+        height: 78px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-table
+    }
+}
+
 input[type="radio"] {
     position: relative;
     z-index: 100;
@@ -26,6 +43,7 @@ input[type="radio"] {
 ul.slides_in {
     position: relative;
     width: 900px;
+    max-width: 90%;
     height: 500px;
     list-style: none;
     margin: 10px;

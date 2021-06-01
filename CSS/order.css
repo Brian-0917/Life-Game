@@ -1,0 +1,178 @@
+@import url(../CSS/headuse.css);
+.hamberger {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.hamberger a {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hamberger li {
+    display: inline-block;
+    list-style: none;
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container {
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.tittle {
+    border-bottom: 3px solid #e6e6e6;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+
+.order {
+    width: 80%;
+    /* height: 300px; */
+    /* border: 1px solid cornflowerblue; */
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.option_list ul {
+    display: inline-block;
+    width: 100%;
+    /* border: 1px solid crimson; */
+    background-color: #e6e6e6;
+}
+
+.option_list li {
+    display: inline-block;
+    width: 225px;
+    /* border: 1px solid chartreuse; */
+    text-align: center;
+}
+
+.option_in ul {
+    display: inline-block;
+    list-style: none;
+}
+
+.option_in li {
+    display: inline-block;
+    width: 225px;
+    height: 65px;
+    text-align: center;
+    padding: 20px;
+    /* border: 1px solid cornflowerblue; */
+    vertical-align: top;
+}
+
+.bonus {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.bonus p {
+    display: inline-block;
+}
+
+.price {
+    display: inline-block;
+    color: red;
+}
+
+.imformation {
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid chartreuse; */
+    margin-top: 10px;
+}
+
+.imformation ul {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.imformation li {
+    display: inline-block;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.imformation input {
+    width: 220px;
+    height: 20px;
+}
+
+.how_pay {
+    width: 100%;
+    height: 250px;
+    /* border: 1px solid rgb(6, 0, 34); */
+    display: inline-flex;
+    justify-content: center;
+}
+
+.how_pay ul {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.how_pay li {
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+}
+
+.how_pay li:nth-of-type(1) {
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid crimson; */
+}
+
+.how_pay li:nth-of-type(2) {
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid rgb(25, 236, 71); */
+}
+
+.how_pay li:nth-of-type(3) {
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid rgb(107, 20, 220); */
+}
+
+.how_pay li:nth-of-type(4) {
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid rgb(207, 220, 20); */
+}
+
+.how_pay img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.how_pay li p {
+    margin-top: 10px;
+}
+
+.how_pay a {
+    color: gray;
+    font-weight: 600;
+}
+
+.order_order {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
