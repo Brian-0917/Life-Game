@@ -8,7 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="./JS/index.js"></script>
 </head>
 
 <body>
@@ -37,7 +38,6 @@
                 <li class="about">
                     <a href="./html/about.html">關於</a>
                 </li>
-
             </ul>
             <div class="search_list">
                 <i class="las la-search"></i>
@@ -46,11 +46,14 @@
                     <a href="./html/person.html"><i class="las la-user"></i></a></div>
             </div>
 
+            <div id="nav">
+                <div class="bar but_top"></div>
+                <div class="bar middle"></div>
+                <div class="bar but_bottom"></div>
 
-            <div class="songyy">
-                <input type="checkbox" id="list_btn" hidden>
-                <label for="list_btn" class="list_btn">≡</label>
-                <ul class="items_other ">
+            </div>
+            <div class="ul">
+                <ul class="items_other">
                     <li class="news ">
                         <a href="./html/news.html ">新聞</a>
                     </li>
@@ -66,12 +69,15 @@
                 </ul>
             </div>
         </div>
+
+        </div>
     </header>
 
 
 
     <div class="container">
         <div class="banner ">
+            <h2>《刺客教條：維京紀元》<br>現正熱銷</h2>
             <!-- <img src="./banner/assasing.jpg " alt=" "> -->
             <div class="banner-content ">
                 <!-- <iframe class="banner-video " src="https://www.youtube.com/embed/ABUTP8ex4DI?autoplay=1&mute=1 " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe> -->
@@ -79,10 +85,12 @@
                 <p><a class="banner-link " href=" ">深入了解</a></p>
             </div>
         </div>
-
+        <div class="dlc_h1">
+            <h1>近期更新</h1>
+        </div>
 
         <div class="dlc_title ">
-            <h1>近期更新</h1>
+
             <div class="new_main ">
                 <div class="grid_esport ">
                     <img class="new_img " src="./dlc_grid/FF15.jpg " alt=" ">
@@ -111,81 +119,82 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- <div class="new_title ">
-        <h1>電玩特報</h1>
-    </div>
+
+        <div class="new_title ">
+            <h1>電玩特報</h1>
+        </div>
 
 
-    <div class="news_main ">
-        <ul class="news_about ">
-            <h2 class="date ">05月04日</h2>
-            <hr>
-            <li>
-                <a href=" "><img src="./new_grid/Sega.jpg " alt=" "></a>
-                <div class="news_inside ">
-                    <a href="# ">
-                        <h2 class="dx ">SEGA清查「休眠」IP，《瘋狂計程車》《飛天幽夢》等經典IP有望捲土重來</h2>
-                    </a>
+        <div class="news_main ">
+            <ul class="news_about ">
+                <h2 class="date ">05月04日</h2>
+                <hr>
+                <li>
+                    <a href=" "><img src="./new_grid/Sega.jpg " alt=" "></a>
+                    <div class="news_inside ">
+                        <a href="# ">
+                            <h2 class="dx ">SEGA清查「休眠」IP《瘋狂計程車》《飛天幽夢》經典IP有望捲土重來</h2>
+                        </a>
 
-                    <P>
-                        <span class="dx_inside ">SEGA 最近在 2021 年三月期財報，公開為期 3 年的「新・中期計劃」。值得一提，SEGA 有意重啟包括「休眠中」的經典 IP，例如《瘋狂計程車》、《太空頻道 5》、《飛天幽夢》、《Jet Set Radio》等..</span>
-                        <a class="dx_goread " href=" ">繼續閱讀</a>
-                    </P>
-                    <div class="like ">
-                        <i class="las la-heart ">0個人說推！</i>
+                        <P>
+                            <span class="dx_inside ">SEGA 最近在 2021 年三月期財報，公開為期 3 年的「新・中期計劃」。值得一提，SEGA 有意重啟包括「休眠中」的經典 IP，例如《瘋狂計程車》、《太空頻道 5》、《飛天幽夢》、《Jet Set Radio》等..</span>
+                            <a class="dx_goread " href=" ">繼續閱讀</a>
+                        </P>
+                        <div class="like ">
+                            <i class="las la-heart ">0個人說推！</i>
+                        </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
-            <li>
-                <a href=" "><img src="./new_grid/capsule_616x353.jpg " alt=" "></a>
-                <div class="news_inside ">
-                    <a href="# ">
-                        <h2 class="dx ">【試玩】主打 8 人合作即時戰術遊戲《紅色至日 2 ：倖存者》搶先體驗</h2>
-                    </a>
-                    <P>
-                        <span class="dx_inside ">主打 8 人合作遊玩的即時戰術遊戲《紅色至日 2：倖存者》是由獨立製作團隊 「Ironward」推出的《紅色至日（The Red Solstice）》系列第三作。過去兩代沒有推出中文版，所以應該不少玩家對這款遊戲很陌生。到了本作，原本只有六人的團隊也終於有了新的人員加入，總算讓這款遊戲首次推出中文版..</span>
-                        <a class="dx_goread " href=" ">繼續閱讀</a>
-                    </P>
-                    <div class="like ">
-                        <i class="las la-heart ">0個人說推！</i>
+                <li>
+                    <a href=" "><img src="./new_grid/capsule_616x353.jpg " alt=" "></a>
+                    <div class="news_inside ">
+                        <a href="# ">
+                            <h2 class="dx ">【試玩】主打 8 人合作即時戰術遊戲【紅色至日 2 ：倖存者】搶先體驗</h2>
+                        </a>
+                        <P>
+                            <span class="dx_inside ">主打 8 人合作遊玩的即時戰術遊戲【紅色至日 2：倖存者】是【紅色至日（The Red Solstice）】系列第三作。本作，原本只有六人的團隊也終於有了新的人員加入，總算讓這款遊戲首次推出中文版..</span>
+                            <a class="dx_goread " href=" ">繼續閱讀</a>
+                        </P>
+                        <div class="like ">
+                            <i class="las la-heart ">0個人說推！</i>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <h2 class="date ">05月03日</h2>
-            <hr>
-            <li>
-                <a href=" "><img src="./new_grid/MSI2021.jpg " alt=" "></a>
-                <div class="news_inside ">
-                    <a href="# ">
-                        <h2 class="dx ">《電競》2021 MSI 季中邀請賽第二階段混合賽即將開打 PSG 首場出戰 DK</h2>
-                    </a>
-                    <P>
-                        <span class="dx_inside ">《英雄聯盟》2021 MSI 季中邀請賽今（14）日晚間將展開第二階段混合賽，由小組賽出線的前六強隊伍爭奪晉級淘汰賽階段的四強資格，台港澳東南亞地區太平洋職業聯賽 PCS 代表戰隊 PSG 首場將對上韓國 DK..</span>
-                        <a class="dx_goread " href=" ">繼續閱讀</a>
-                    </P>
-                    <div class="like ">
-                        <i class="las la-heart ">0個人說推！</i>
+                </li>
+                <h2 class="date ">05月03日</h2>
+                <hr>
+                <li>
+                    <a href=" "><img src="./new_grid/MSI2021.jpg " alt=" "></a>
+                    <div class="news_inside ">
+                        <a href="# ">
+                            <h2 class="dx ">【電競】2021 MSI 季中邀請賽第二階段混合賽即將開打 PSG 出戰 DK</h2>
+                        </a>
+                        <P>
+                            <span class="dx_inside ">【英雄聯盟】2021 MSI 季中邀請賽今（14）日晚間將展開第二階段混合賽，由小組賽出線的前六強隊伍爭奪晉級淘汰賽階段的四強資格，台港澳東南亞地區太平洋職業聯賽 PCS 代表戰隊 PSG 首場將對上韓國 DK..</span>
+                            <a class="dx_goread " href=" ">繼續閱讀</a>
+                        </P>
+                        <div class="like ">
+                            <i class="las la-heart ">0個人說推！</i>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li>
-                <a href=" "><img src="./new_grid/riot.jpg " alt=" "></a>
-                <div class="news_inside ">
-                    <a href="# ">
-                        <h2 class="dx ">《特戰英豪》新休閒模式「複製亂戰」已開放　2021 社群盃將採該賽制</h2>
-                    </a>
-                    <P>
-                        <span class="dx_inside ">《特戰英豪》新限定模式「複製亂戰」已上線，為玩家帶來獨特性趣味，同時 Riot Games 宣布日後在台灣舉辦的 2021 社群盃將採用該模式進行。另外，官方釋出第二幕第三章戰鬥通行證設計靈感、想法與概念等..</span>
-                        <a class="dx_goread " href=" ">繼續閱讀</a>
-                    </P>
-                    <div class="like ">
-                        <i class="las la-heart ">0個人說推！</i>
+                </li>
+                <li>
+                    <a href=" "><img src="./new_grid/riot.jpg " alt=" "></a>
+                    <div class="news_inside ">
+                        <a href="# ">
+                            <h2 class="dx ">【特戰英豪】新休閒模式「複製亂戰」已開放　2021 </h2>
+                        </a>
+                        <P>
+                            <span class="dx_inside ">《特戰英豪》新限定模式「複製亂戰」已上線，同時 Riot Games 宣布日後在台灣舉辦的 2021 社群盃將採用該模式進行。另外，官方釋出第二幕第三章戰鬥通行證設計靈感、想法與概念等..</span>
+                            <a class="dx_goread " href=" ">繼續閱讀</a>
+                        </P>
+                        <div class="like ">
+                            <i class="las la-heart ">87個人說推！</i>
+                        </div>
                     </div>
-                </div>
-            </li>
-        </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <div class="footer ">
@@ -208,6 +217,6 @@
             </span>
         </p>
     </div>
-</body> -->
+</body>
 
 </html>
