@@ -8,41 +8,93 @@
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/news.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="../JS/index.js"></script>
+    <script src="../JS/news.js"></script>
 </head>
 
 <body>
 
 
     <header class="header">
+
+
         <div class="navi">
+            <!-- <a href="index.html">
+                <img class="top_logo" src="./logo/logo.png" alt="">
+            </a> -->
             <div class="logo">
-                <a href="../index.html">
+                <a href="index.html" class="logo_link">
                     <img class="top_logo" src="../logo/logo.png" alt="">
                 </a>
             </div>
             <ul class="items">
                 <li class="news active">
-                    <a href="./news.html">新聞</a></li>
+                    <a class="active" href="./news.html">新聞</a>
+                </li>
                 <li class="social">
-                    <a href="./product.html">最新商品</a></li>
+                    <a href="./product.html">最新商品</a>
+                </li>
                 <li class="sing">
-                    <a href="./logoin.html">會員中心</a></li>
+                    <a href="./logoin.html">會員中心</a>
+                </li>
                 <li class="about">
-                    <a href="./about.html">關於</a></li>
-                <!-- <li class="surfe">
-                    <a href="">客服中心</a></li> -->
+                    <a href="./about.html">關於</a>
+                </li>
             </ul>
             <div class="search_list">
                 <i class="las la-search"></i>
                 <input class="search_block" type="text" placeholder="搜尋商店">
                 <div class="person">
-                    <a href="./person.html"><i class="las la-user"></i></a></div>
+                    <a href="./html/person.html"><i class="las la-user"></i></a></div>
+            </div>
+
+            <div id="nav">
+                <div class="bar but_top"></div>
+                <div class="bar middle"></div>
+                <div class="bar but_bottom"></div>
+
+            </div>
+            <div class="ul">
+                <ul class="items_other">
+                    <li class="news ">
+                        <a href="./html/news.html ">新聞</a>
+                    </li>
+                    <li class="social ">
+                        <a href="./html/product.html ">最新商品</a>
+                    </li>
+                    <li class="sing ">
+                        <a href="./html/logoin.html ">會員中心</a>
+                    </li>
+                    <li class="about ">
+                        <a href="./html/about.html ">關於</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
 
-    <div class="slides">
+        </div>
+    </header>
+    <div class="news_pic">
+        <ul class="pic_run">
+            <li class="pic mv1">
+                <!-- <img src="../news/news_img/village.jpg" alt=""> -->
+                <span>雖然遊戲即將正式發售，但截至目前為止仍充滿了謎團，總監佐藤盛正專訪</span>
+            </li>
+            <li class="pic mv2">
+                <!-- <img src="../news/news_img/six.jpg" alt=""> -->
+                <span>《虹彩六號：圍攻行動》「浩劫」限時活動展開 為人類最後希望而戰</span>
+            </li>
+            <li class="pic mv3">
+                <!-- <img src="../news/news_img/dragen.jpg" alt=""> -->
+                <span>《勇者鬥惡龍 創世小玩家 2》今日登陸 Xbox One / Win 10 / Xbox Game Pass</span>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- <div class="slides">
         <ul class="slides_in">
 
             <input type="radio" id="control-1" name="control" checked>
@@ -61,7 +113,7 @@
         <label for="control-1"></label>
         <label for="control-2"></label>
         <label for="control-3"></label>
-    </div>
+    </div> -->
 
 
 

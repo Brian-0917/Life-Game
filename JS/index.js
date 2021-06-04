@@ -18,7 +18,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // timelinemax 同時執行動畫
     tlmenu.add([top_mv, middle_mv, bottom_mv])
 
-    tlmenu.to('.items_other', .1, {
+    tlmenu.to('.header', .1, {
+        height: 300,
+    }).to('.items_other', .1, {
         opacity: 1,
     }).staggerTo('.items_other li', .2, {
         opacity: 1

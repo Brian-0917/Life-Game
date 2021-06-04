@@ -157,7 +157,6 @@ ul.items li a {
     ul.items {
         display: none;
     }
-    ul.items_other {}
 }
 
 .container {
@@ -183,7 +182,6 @@ ul.items li a {
     background-size: cover;
     background-position: center;
     position: relative;
-    z-index: -100;
 }
 
 .banner h2 {
