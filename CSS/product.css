@@ -24,7 +24,6 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 30vh;
 }
 
 ul.slides_in {
@@ -202,7 +201,6 @@ li.slides_in i {
 
 @media (max-width: 1150px) {
     div.rank_border {
-        height: 500px;
         margin-top: 30px;
     }
     div.slides ul.slides_in {
@@ -223,7 +221,7 @@ li.slides_in i {
     .slides_in:nth-of-type(2) {
         background-image: url(../product_img/main/hood1150.webp);
         background-position: bottom;
-        background-size: contain;
+        background-size: cover;
     }
     .slides_in:nth-of-type(3) {
         background-image: url(../product_img/main/nier1150.jpg);
@@ -237,6 +235,43 @@ li.slides_in i {
     ul.rank {
         display: none;
         opacity: 0;
+    }
+}
+
+@media (max-width:1070px) {
+    div.search_list {
+        display: none;
+    }
+}
+
+@media (max-width:540px) {
+    div.search_list {
+        display: none;
+    }
+}
+
+@media (max-width:376px) {
+    div.slides ul.slides_in {
+        width: 250px;
+        margin: 0;
+        height: 350px;
+    }
+    div.but_title {
+        width: 120px;
+        margin-right: 0px;
+        font-size: 14px;
+    }
+    div.controls-visible ul.rank li label {
+        width: 115px;
+        height: 60px;
+        background-color: #eee;
+        margin-right: 0;
+    }
+    div.slides_in span {
+        font-size: 12px;
+    }
+    div.surch_block h1 {
+        font-size: 24px;
     }
 }
 
@@ -464,12 +499,17 @@ input {
     margin-left: 10px;
 }
 
-.shop_list h2 {
+.shop_list h3 {
     margin-bottom: 10px;
 }
 
-.shop_list h3 {
-    margin-bottom: 10px;
+@media (max-width:376px) {
+    .shop_typtwo li {
+        width: 100%;
+    }
+    .shop_typtwo li img {
+        width: 150px;
+    }
 }
 
 p.price {
