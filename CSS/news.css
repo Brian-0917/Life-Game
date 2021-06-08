@@ -136,11 +136,6 @@ ul.pic_run li {
     top: 0;
 }
 
-li.pic:nth-of-type(1) {
-    /* background-color: lightcyan; */
-    /* background-image: url(../news/news_img/village.jpg); */
-}
-
 li.pic:nth-of-type(2) {
     /* background-color: lemonchiffon; */
     left: 100%;
@@ -321,7 +316,7 @@ a.dx_goread:hover {
     }
 }
 
-@media (max-width:420px) {
+@media (max-width:516px) {
     ul.news_about img {
         display: none;
     }

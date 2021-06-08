@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     tlmenu.to('.header', .1, {
         height: 300,
-    }).to('.items_other', .1, {
+    }).to('.items_other', .1, { display: 'block' }, {
         opacity: 1,
     }).staggerTo('.items_other li', .2, {
         opacity: 1

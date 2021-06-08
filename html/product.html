@@ -13,14 +13,22 @@
     <link rel="stylesheet" href="../CSS/product.css">
     <script src="../JS/Jquery.js"></script>
     <script src="../JS/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="../JS/myfunc.js"></script>
+    <script src="../JS/index.js"></script>
+    <script src="../JS/product.js"></script>
 </head>
 
 <body>
     <header class="header">
+
+
         <div class="navi">
+            <!-- <a href="index.html">
+                <img class="top_logo" src="./logo/logo.png" alt="">
+            </a> -->
             <div class="logo">
-                <a href="../index.html  ">
+                <a href="../index.html" class="logo_link">
                     <img class="top_logo" src="../logo/logo.png" alt="">
                 </a>
             </div>
@@ -28,8 +36,8 @@
                 <li class="news">
                     <a href="./news.html">新聞</a>
                 </li>
-                <li class="social active">
-                    <a href="">最新商品</a>
+                <li class="social">
+                    <a class="active" href="./product.html">最新商品</a>
                 </li>
                 <li class="sing">
                     <a href="./logoin.html">會員中心</a>
@@ -37,19 +45,41 @@
                 <li class="about">
                     <a href="./about.html">關於</a>
                 </li>
-                <!-- <li class="surfe">
-                    <a href="">客服中心</a>
-                </li> -->
             </ul>
             <div class="search_list">
                 <i class="las la-search"></i>
                 <input class="search_block" type="text" placeholder="搜尋商店">
                 <div class="person">
-                    <a href="./person.html"><i class="las la-user"></i></a></div>
+                    <a href="./html/person.html"><i class="las la-user"></i></a></div>
+            </div>
+
+            <div id="nav">
+                <div class="bar but_top"></div>
+                <div class="bar middle"></div>
+                <div class="bar but_bottom"></div>
+
+            </div>
+            <div class="ul">
+                <ul class="items_other">
+                    <li class="news ">
+                        <a href="./news.html ">新聞</a>
+                    </li>
+                    <li class="social ">
+                        <a href="./product.html ">最新商品</a>
+                    </li>
+                    <li class="sing ">
+                        <a href="./logoin.html ">會員中心</a>
+                    </li>
+                    <li class="about ">
+                        <a href="./about.html ">關於</a>
+                    </li>
+                </ul>
             </div>
         </div>
+
     </header>
 
+    </header>
 
     <div class="title_block">
         <h1>本月排行</h1>
@@ -57,6 +87,9 @@
 
     <div class="rank_border">
         <div class="controls-visible">
+            <div class="but_title">
+                <h2>本月排行</h2>
+            </div>
             <ul class="rank">
                 <li><label class="first" for="control-1"></label></li>
                 <li> <label class="second" for="control-2"></label></li>
@@ -66,7 +99,6 @@
 
         <div class="slides">
             <ul class="slides_in">
-
                 <input type="radio" id="control-1" name="control" checked>
                 <input type="radio" id="control-2" name="control">
                 <input type="radio" id="control-3" name="control">
@@ -74,7 +106,6 @@
                 <li class="slides_in"><span><i class="las la-medal"></i>本月銷售冠軍<i class="las la-medal"></i><br>遊戲名稱:惡靈古堡-村莊<br>遊戲類型:第一人稱射擊恐怖遊戲<br>目前狀態:補貨中</span></li>
                 <li class="slides_in"><span>遊戲名稱:綠林俠盜：亡命之徒與傳奇<br>遊戲類型:動作冒險遊戲<br>目前狀態:現正熱銷</span></li>
                 <li class="slides_in"><span>遊戲名稱:尼爾<br>遊戲類型:動作冒險遊戲<br> 目前狀況:缺貨中<br> </span></li>
-
             </ul>
 
 
@@ -90,6 +121,9 @@
 
     <div class="surch_block">
         <h1>暢銷商品</h1>
+    </div>
+    <div class="selecter">
+        <h2>篩選</h2>
     </div>
 
     <div class="tag">
@@ -129,7 +163,7 @@
             </div>
             <div class="grid-item">
                 <a href="" class="gird_item_a">
-                    <img class="grid_img" src="../product_img/shop_item/尼爾.jpg" alt=""> nier replicant™ ver.1.22474487139
+                    <img class="grid_img" src="../product_img/shop_item/near.jpg" alt=""> nier replicant™ ver.1.22474487139
                     <div class="grid_span">
                         <p>2021年4月22日</p>
                         <p> SQUARE ENIX </p>
@@ -140,7 +174,7 @@
             </div>
             <div class="grid-item">
                 <a href="" class="gird_item_a">
-                    <img class="grid_img" src="../product_img/shop_item/惡靈古堡888.jpg" alt="">Resident Evil Village 惡靈古堡8 村莊
+                    <img class="grid_img" src="../product_img/shop_item/village.jpg" alt="">Resident Evil Village 惡靈古堡8 村莊
                     <div class="grid_span">
                         <p> 2021 年 4 月 18 日</p>
                         <p> Capcom</p>
@@ -151,7 +185,7 @@
             </div>
             <div class="grid-item">
                 <a href="" class="gird_item_a">
-                    <img class="grid_img" src="../product_img/shop_item/海賊無雙.jpg" alt=""> 航海王 海賊無雙4
+                    <img class="grid_img" src="../product_img/shop_item/kaizouku.jpg" alt=""> 航海王 海賊無雙4
                     <div class="grid_span">
                         <p>2020 年 3 月 26 日</p>
                         <p> Omega Force</p>
@@ -162,7 +196,7 @@
             </div>
             <div class="grid-item">
                 <a href="" class="gird_item_a">
-                    <img class="grid_img" src="../product_img/shop_item/牧場物語.jpg" alt=""> 牧場物語 重聚礦石鎮
+                    <img class="grid_img" src="../product_img/shop_item/farm.jpg" alt=""> 牧場物語 重聚礦石鎮
                     <div class="grid_span">
                         <p>2019 年 10 月 17 日</p>
                         <p> Marvelous</p>
@@ -173,7 +207,7 @@
             </div>
             <div class="grid-item">
                 <a href="" class="gird_item_a">
-                    <img class="grid_img" src="../product_img/shop_item/示意帝國.jpg" alt=""> 世紀帝國III
+                    <img class="grid_img" src="../product_img/shop_item/sekai.jpg" alt=""> 世紀帝國III
                     <div class="grid_span">
                         <p>2005 年 10 月 18 日</p>
                         <p> Ensemble Studios</p>
@@ -184,7 +218,7 @@
             </div>
             <div class="grid-item">
                 <a href="" class="gird_item_a">
-                    <img class="grid_img" src="../product_img/shop_item/邱之回憶8.png" alt=""> メモリーズオフ 秋之回憶8
+                    <img class="grid_img" src="../product_img/shop_item/mrmori.png" alt=""> メモリーズオフ 秋之回憶8
                     <div class="grid_span">
                         <p> 2018 年 3 月 29 日</p>
                         <p> Spike Chunsoft</p>
@@ -194,7 +228,7 @@
                 </a>
             </div>
         </div>
-        <div class="tag_ul">
+        <div class="tag_ul dis">
             <div class="sooto">
                 <span>排序</span>
                 <ul>
@@ -302,15 +336,210 @@
                                 <button type="submit">NT$300-NT$500</button>
                             </li>
                         </a>
-                        <a href="">
-                            <li>
-                                <button type="submit">特價</button>
-                            </li>
-                        </a>
+
                     </ul>
                 </div>
             </div>
         </div>
+        <div class="tag_ul slmv1">
+            <div class="sooto">
+                <span>排序</span>
+                <ul>
+                    <li>
+                        <a href="">
+                            <button type="submit">人氣最高</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button type="submit">發行日期</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button type="submit">字母順序-A到Z</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button type="submit">字母順序-Z到A</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sooto">
+                <span>遊戲類型</span>
+                <ul>
+                    <li>
+                        <a href="">
+                            <button type="submit">大型多人線上</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button type="submit">第一人稱</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button type="submit">動作</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button type="submit">角色扮演</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button type="submit">恐怖</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button type="submit">模擬</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button type="submit">射擊</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button type="submit">休閒</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button type="submit">運動</button>
+                        </a>
+                    </li>
+                </ul>
+                <div class="sooto">
+                    <span>價格</span>
+                    <ul>
+                        <a href="">
+                            <li>
+                                <button type="submit">NT$1500以上</button>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <button type="submit">NT$1200-NT$1500</button>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <button type="submit">NT$900-NT$1200</button>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <button type="submit">NT$600-NT$900</button>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <button type="submit">NT$500以下</button>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <button type="submit">NT$300-NT$500</button>
+                            </li>
+                        </a>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shop_typtwo">
+        <ul>
+            <li>
+                <img src="../product_img/shop_item/NBA 21.jpg" alt="">
+                <div class="shop_list">
+                    <h3>NBA 2K21</h3>
+                    <p>2K Games</p>
+                    <p>運動 模擬</p>
+                    <p class="price">$898</p>
+                </div>
+            </li>
+            <li>
+                <img src="../product_img/shop_item/GREEN HELL.jpg" alt="">
+                <div class="shop_list">
+                    <h3>Green hell</h3>
+                    <p> Incuvo S.A.</p>
+                    <p>生存 動作</p>
+                    <p class="price">$521</p>
+                </div>
+            </li>
+            <li>
+                <img src="../product_img/shop_item/SEA OF SEA.jpg" alt="">
+                <div class="shop_list">
+                    <h3>Sea of Thieves</h3>
+                    <p>Rare</p>
+                    <p>沙盒 冒險</p>
+                    <p class="price">$498</p>
+                </div>
+            </li>
+            <li>
+                <img src="../product_img/shop_item/kaizouku.jpg" alt="">
+                <div class="shop_list">
+                    <h3>海賊無雙4</h3>
+                    <p>Omega Force</p>
+                    <p>動作</p>
+                    <p class="price">$548</p>
+                </div>
+            </li>
+            <li>
+                <img src="../product_img/shop_item/farm.jpg" alt="">
+                <div class="shop_list">
+                    <h3>牧場物語</h3>
+                    <p>Marvelous</p>
+                    <p>模擬</p>
+                    <p class="price">$598</p>
+                </div>
+            </li>
+            <li>
+                <img src="../product_img/shop_item/mrmori.png" alt="">
+                <div class="shop_list">
+                    <h3>秋之回憶8</h3>
+                    <p>Marvelous</p>
+                    <p>文字</p>
+                    <p class="price">$598</p>
+                </div>
+            </li>
+            <li>
+                <img src="../product_img/shop_item/near.jpg" alt="">
+                <div class="shop_list">
+                    <h3>尼爾人形</h3>
+                    <p> Spike Chunsoft</p>
+                    <p>模擬</p>
+                    <p class="price">$898</p>
+                </div>
+            </li>
+            <li>
+                <img src="../product_img/shop_item/village.jpg" alt="">
+                <div class="shop_list">
+                    <h3>惡靈古堡 村莊</h3>
+                    <p>Marvelous</p>
+                    <p>動作 冒險</p>
+                    <p class="price">$1024</p>
+                </div>
+            </li>
+            <li>
+                <img src="../product_img/shop_item/sekai.jpg" alt="">
+                <div class="shop_list">
+                    <h3>世紀帝國III</h3>
+                    <p>Spike Chunsoft</p>
+                    <p>策略</p>
+                    <p class="price">$398</p>
+                </div>
+            </li>
+
+        </ul>
     </div>
     </div>
     <div class="page_block">
@@ -330,10 +559,11 @@
         </ul>
     </div>
 
+
     <div class="surch_block">
         <h1>即將上市</h1>
     </div>
-    <div class="commingsoon">
+    <!-- <div class="commingsoon">
         <div class="commingsoon_item">
             <a href="" class="commingsoon_a">
                 <img class="commingsoon_li" src="../product_img/comming soon/ARK2.jpg" alt="">
@@ -364,10 +594,10 @@
                 </div>
             </a>
         </div>
-    </div>
+    </div> -->
 
 
-    <div class="owl-carousel owl-theme">
+    <!-- <div class="owl-carousel owl-theme">
         <div class="item">
             <a href="" class="commingsoon_a">
                 <img class="commingsoon_img" src="../product_img/comming soon/img-re/dying_light.jpg" alt="">
@@ -429,7 +659,7 @@
             </a>
         </div>
 
-    </div>
+    </div> -->
 
 
 
