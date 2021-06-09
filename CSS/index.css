@@ -208,12 +208,38 @@ ul.items li a {
 
 .banner p a {
     font-size: 24px;
-    color: white;
     text-decoration: none;
     border: 1px double rgb(255, 255, 255);
     padding: 5px;
-    background-color: rgb(158, 0, 0);
+    background-color: rgb(100, 0, 0);
+    color: #d6d6d6;
+    animation: blink 1000ms infinite;
+    -webkit-animation: blink 1000ms infinite;
     font-weight: 600;
+}
+
+@keyframes blink {
+    from {
+        color: #d6d6d6;
+    }
+    50% {
+        color: rgb(134, 134, 134);
+    }
+    to {
+        color: rgb(255, 255, 255);
+    }
+}
+
+@-webkit-keyframes blink {
+    from {
+        color: #d6d6d6;
+    }
+    50% {
+        color: rgb(134, 134, 134);
+    }
+    to {
+        color: rgb(255, 255, 255);
+    }
 }
 
 @media (max-width:768px) {
