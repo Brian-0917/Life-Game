@@ -59,9 +59,31 @@
     background-color: rgb(145, 71, 255);
 }
 
+@media (max-width:768px) {
+    .social_id td {
+        border-radius: 0;
+    }
+    .social_id h2 {
+        font-size: 20px;
+    }
+    .social_id {
+        border: none;
+        width: 100%;
+    }
+}
+
+@media (max-width:575px) {
+    .social_id {
+        width: 100%;
+    }
+    .social_table {
+        border-spacing: 30px 10px;
+    }
+}
+
 .id_create {
     width: 50%;
-    height: 800px;
+    height: 100%;
     border: 3px solid gray;
     margin: 0 auto;
     text-align: center;
@@ -136,4 +158,31 @@
     margin: 0 auto;
     border-top: 3px solid #d6d6d6;
     margin-top: 30px;
+}
+
+@media (max-width:768px) {
+    .id_create {
+        width: 80%;
+    }
+}
+
+@media (max-width:575px) {
+    .id_create {
+        width: 100%;
+        border: none;
+    }
+    .id_main {
+        border-spacing: 20px 30px;
+    }
+    .subscription {
+        width: 100%;
+    }
+    .subscription span {
+        font-size: 16px;
+    }
+    .id_create h2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
 }
