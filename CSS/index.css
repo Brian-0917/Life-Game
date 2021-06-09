@@ -239,6 +239,7 @@ ul.items li a {
 
 @media (max-width:376px) {
     div.banner {
+        width: 100%;
         background-image: url(../banner/assaing768.jpg);
         height: 350px;
     }
