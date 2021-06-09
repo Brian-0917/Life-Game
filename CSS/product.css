@@ -254,14 +254,14 @@ li.slides_in i {
     }
     div.but_title {
         width: 140px;
-        margin-right: 0px;
+        margin-right: 10px;
         font-size: 14px;
     }
     div.controls-visible ul.rank li label {
         width: 140px;
         height: 80px;
         background-color: #eee;
-        margin-right: 0;
+        margin-right: 10px;
     }
     ul.slides_in span {
         font-size: 14px;
@@ -429,6 +429,9 @@ i.las.la-hand-point-right {
     }
     .selecter {
         display: block;
+    }
+    body {
+        overflow-x: hidden;
     }
 }
 
@@ -646,7 +649,7 @@ p.price {
 .slmv1 {
     background-color: rgba(48, 48, 48, 1);
     color: white;
-    /* display: none; */
+    display: none;
     position: absolute;
     right: -100vw;
 }

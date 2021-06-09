@@ -8,14 +8,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/order.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="../JS/index.js"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="navi">
+            <!-- <a href="index.html">
+                <img class="top_logo" src="./logo/logo.png" alt="">
+            </a> -->
             <div class="logo">
-                <a href="../index.html">
+                <a href="../index.html" class="logo_link">
                     <img class="top_logo" src="../logo/logo.png" alt="">
                 </a>
             </div>
@@ -26,21 +30,41 @@
                 <li class="social">
                     <a href="./product.html">最新商品</a>
                 </li>
-                <li class="sing active">
-                    <a href="./logoin.html">會員中心</a>
+                <li class="sing">
+                    <a class="active" href="./logoin.html">會員中心</a>
                 </li>
                 <li class="about">
-                    <a href="">關於</a>
+                    <a href="./about.html">關於</a>
                 </li>
-                <!-- <li class="surfe">
-                    <a href="">客服中心</a>
-                </li> -->
             </ul>
             <div class="search_list">
                 <i class="las la-search"></i>
                 <input class="search_block" type="text" placeholder="搜尋商店">
                 <div class="person">
-                    <a href="./person.html"><i class="las la-user"></i></a></div>
+                    <a href="./html/person.html"><i class="las la-user"></i></a></div>
+            </div>
+
+            <div id="nav">
+                <div class="bar but_top"></div>
+                <div class="bar middle"></div>
+                <div class="bar but_bottom"></div>
+
+            </div>
+            <div class="ul">
+                <ul class="items_other">
+                    <li class="news ">
+                        <a href="./news.html ">新聞</a>
+                    </li>
+                    <li class="social ">
+                        <a href="./product.html ">最新商品</a>
+                    </li>
+                    <li class="sing ">
+                        <a href="./logoin.html ">會員中心</a>
+                    </li>
+                    <li class="about ">
+                        <a href="./about.html ">關於</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -52,7 +76,8 @@
         </ul>
     </div>
     <div class="container">
-        <h2 class="tittle">我的訂單</h2>
+        <h2 class="tittle">
+            我的訂單</h2>
         <div class="order">
             <div class="option">
                 <div class="option_list">
@@ -84,11 +109,13 @@
         </div>
         <h2 class="tittle">付款資訊</h2>
         <div class="imformation">
-            <ul>
-                <li><label for="name">姓名:</label><input type="text" id="name"></li>
-                <li><label for="phone">手機:</label><input type="text" id="phone"></li>
-                <li><label for="phone">電話:</label><input type="text" id="phone"></li>
-                <li><label for="email">信箱:</label><input type="text" id="email"></li>
+            <ul class="ul_two">
+                <li><label for="name">姓名:</label><input type="text" placeholder="請輸入真實姓名" id="name"></li>
+                <li><label for="phone">手機:</label><input type="text" placeholder="09-" id="phone"></li>
+            </ul>
+            <ul class="ul_three">
+                <li><label for="phone">電話:</label><input type="text" placeholder="02-" id="phone"></li>
+                <li><label for="email">信箱:</label><input type="text" placeholder="電子郵件" id="email"></li>
             </ul>
         </div>
 
@@ -107,18 +134,47 @@
                 </a>
                 <a href="">
                     <li><img src="../product_img/order/shipping-hilife.png" alt="">
-                        <p>萊爾富 超商取貨</p>
+                        <p>萊爾富 取貨</p>
                     </li>
                 </a>
                 <a href="">
                     <li><img src="../product_img/order/shipping-blackcat.png" alt="">
-                        <p>黑貓宅急便取貨</p>
+                        <p>黑貓宅急便</p>
                     </li>
                 </a>
             </ul>
-
         </div>
-        <button class="order_order" type="submit">送出訂單</button>
+        <!-- <div class="how_pay two">
+                <ul>
+                    <a href="">
+                        <li>
+                            <img src="../product_img/order/711.png" alt="">
+                            <p>7-11超商取貨</p>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li><img src="../product_img/order/shipping-family.png" alt="">
+                            <p>全家 超商取貨</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="how_pay three">
+                <ul>
+                    <a href="">
+                        <li><img src="../product_img/order/shipping-hilife.png" alt="">
+                            <p>萊爾富 取貨</p>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li><img src="../product_img/order/shipping-blackcat.png" alt="">
+                        </li>
+                    </a>
+                </ul>
+            </div> -->
+        <div class="order_for">
+            <p>送出訂單</p>
+        </div>
     </div>
 
 

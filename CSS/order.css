@@ -34,7 +34,7 @@
 }
 
 .order {
-    width: 80%;
+    width: 100%;
     /* height: 300px; */
     /* border: 1px solid cornflowerblue; */
     margin: 0 auto;
@@ -42,7 +42,7 @@
 }
 
 .option_list ul {
-    display: inline-block;
+    display: flex;
     width: 100%;
     /* border: 1px solid crimson; */
     background-color: #e6e6e6;
@@ -50,22 +50,23 @@
 
 .option_list li {
     display: inline-block;
-    width: 225px;
+    width: 100%;
     /* border: 1px solid chartreuse; */
     text-align: center;
 }
 
 .option_in ul {
-    display: inline-block;
+    display: flex;
+    width: 100%;
     list-style: none;
 }
 
 .option_in li {
     display: inline-block;
-    width: 225px;
+    width: 100%;
     height: 65px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     /* border: 1px solid cornflowerblue; */
     vertical-align: top;
 }
@@ -87,38 +88,79 @@
 
 .imformation {
     width: 100%;
-    height: 50px;
     /* border: 1px solid chartreuse; */
     margin-top: 10px;
 }
 
 .imformation ul {
-    display: inline-block;
-    margin-left: 30px;
+    list-style: none;
 }
 
 .imformation li {
-    display: inline-block;
-    font-weight: 600;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
-.imformation input {
-    width: 220px;
-    height: 20px;
+.ul_two {
+    width: 80%;
+    display: block;
+    /* border: 1px solid chartreuse; */
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.ul_two li {
+    display: inline-block;
+}
+
+.ul_two label {
+    margin-right: 10px;
+}
+
+.ul_two input {
+    border: none;
+    border-bottom: 1px solid gray;
+    height: 24px;
+    margin-right: 50px;
+}
+
+.ul_three {
+    width: 80%;
+    display: block;
+    /* border: 1px solid chartreuse; */
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.ul_three li {
+    display: inline-block;
+}
+
+.ul_three label {
+    margin-right: 10px;
+}
+
+.ul_three input {
+    border: none;
+    border-bottom: 1px solid gray;
+    height: 24px;
+    margin-right: 50px;
 }
 
 .how_pay {
-    width: 100%;
-    height: 250px;
-    /* border: 1px solid rgb(6, 0, 34); */
-    display: inline-flex;
+    width: 80%;
+    border: 1px solid rgb(6, 0, 34);
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
     justify-content: center;
 }
 
 .how_pay ul {
     display: inline-block;
-    vertical-align: top;
+    /* vertical-align: top; */
     text-align: center;
 }
 
@@ -126,30 +168,6 @@
     display: inline-block;
     margin: 20px;
     vertical-align: top;
-}
-
-.how_pay li:nth-of-type(1) {
-    width: 200px;
-    height: 200px;
-    /* border: 1px solid crimson; */
-}
-
-.how_pay li:nth-of-type(2) {
-    width: 200px;
-    height: 200px;
-    /* border: 1px solid rgb(25, 236, 71); */
-}
-
-.how_pay li:nth-of-type(3) {
-    width: 200px;
-    height: 200px;
-    /* border: 1px solid rgb(107, 20, 220); */
-}
-
-.how_pay li:nth-of-type(4) {
-    width: 200px;
-    height: 200px;
-    /* border: 1px solid rgb(207, 220, 20); */
 }
 
 .how_pay img {
@@ -165,14 +183,65 @@
 .how_pay a {
     color: gray;
     font-weight: 600;
+    text-decoration: none;
 }
 
-.order_order {
-    display: block;
+
+/* .three {
+    display: none;
+}
+
+.two {
+    display: none;
+} */
+
+.order_for p {
+    text-align: center;
     margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 100px;
     height: 50px;
-    background-color: red;
-    color: white;
-    border-radius: 10px;
+    line-height: 50px;
+    background-color: rgb(100, 0, 0);
+    color: #d6d6d6;
+    animation: blink 1000ms infinite;
+    -webkit-animation: blink 1000ms infinite;
+}
+
+@keyframes blink {
+    from {
+        color: #d6d6d6;
+    }
+    50% {
+        color: rgb(134, 134, 134);
+    }
+    to {
+        color: rgb(255, 255, 255);
+    }
+}
+
+@-webkit-keyframes blink {
+    from {
+        color: #d6d6d6;
+    }
+    50% {
+        color: rgb(134, 134, 134);
+    }
+    to {
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media (max-width:575px) {
+    .container {
+        width: 100%;
+    }
+    ul.ul_two {
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    ul.ul_three {
+        margin-bottom: 10px;
+    }
 }

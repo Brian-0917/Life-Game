@@ -53,8 +53,7 @@
         margin-left: 20px;
     }
     .slide img {
-        width: 200px;
-        height: 150px;
+        display: none;
     }
 }
 
@@ -86,7 +85,7 @@ h1.price {
 
 @media (max-width:768px) {
     .slide h3 {
-        font-size: 16px;
+        font-size: 18px;
         text-align: center;
         font-weight: 800;
     }
