@@ -4,7 +4,6 @@ $(document).ready(function() {
         items: 6,
         autoHeight: true,
         loop: true,
-        margin: 30,
         responsive: {
             300: {
                 items: 1

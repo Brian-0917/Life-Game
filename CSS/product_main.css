@@ -36,12 +36,26 @@
     /* border: 5px double #d6d6d6;
     border-right: none;
     border-bottom: none; */
+    /* display: none; */
 }
 
 .slide img {
     width: 400px;
     height: 300px;
     padding-bottom: 10px;
+}
+
+@media (max-width:768px) {
+    .main {
+        width: 100%;
+    }
+    .slide {
+        margin-left: 20px;
+    }
+    .slide img {
+        width: 200px;
+        height: 150px;
+    }
 }
 
 .slide ul {
@@ -68,6 +82,107 @@ h1.price {
 
 .slide p {
     padding-bottom: 10px;
+}
+
+@media (max-width:768px) {
+    .slide h3 {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 800;
+    }
+    .slide ul {
+        text-align: center;
+    }
+    h1.price {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .slide button {
+        margin-left: 30px;
+    }
+}
+
+.slide_mv1 {
+    display: none;
+}
+
+@media (max-width:575px) {
+    .slide button {
+        width: 100px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:575px) {
+    .main {
+        width: 100%;
+    }
+    .slide {
+        display: none;
+    }
+    .slide_mv1 {
+        display: block;
+    }
+    .slide_mv1 h4 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .slide_mv1 ul {
+        /* border: 1px solid red; */
+        width: 80%;
+        margin: 0 auto;
+        list-style: none;
+        padding: 10px;
+        background-color: rgb(73, 73, 73);
+        color: white;
+    }
+    .slide_mv1 ul li {
+        margin-bottom: 5px;
+    }
+    .slide_mv1 button {
+        width: 120px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+        font-size: 18px;
+        background-color: rgb(100, 0, 0);
+        color: #d6d6d6;
+        animation: blink 1000ms infinite;
+        -webkit-animation: blink 1000ms infinite;
+    }
+    .slide_mv1 a {
+        text-decoration: none;
+    }
+    .game_in span {
+        display: none;
+    }
+    .game_in h3 {
+        text-align: left;
+    }
+}
+
+@keyframes blink {
+    from {
+        color: #d6d6d6;
+    }
+    50% {
+        color: rgb(134, 134, 134);
+    }
+    to {
+        color: rgb(255, 255, 255);
+    }
+}
+
+@-webkit-keyframes blink {
+    from {
+        color: #d6d6d6;
+    }
+    50% {
+        color: rgb(134, 134, 134);
+    }
+    to {
+        color: rgb(255, 255, 255);
+    }
 }
 
 .game_naiiyou {
