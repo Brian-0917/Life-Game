@@ -1,5 +1,4 @@
-@import url(./headuse.css);
-@import url(./footuse.css);
+@import url("headuse.css");
 .logo_bk {
     /* border: 1px solid red; */
     width: 100%;
@@ -78,14 +77,21 @@ p.now_touroku {
 
 p.now_touroku a {
     color: gray;
+    text-decoration: none;
 }
 
 .social_icon {
     text-align: center;
+    text-decoration: none;
+}
+
+.social_icon a {
+    text-decoration: none;
 }
 
 .social_icon i {
     font-size: 36px;
+    color: gray;
 }
 
 .social_icon i:hover {

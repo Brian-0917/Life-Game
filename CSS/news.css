@@ -212,7 +212,7 @@ li.pic span {
     }
 }
 
-@media (max-width:376px) {
+@media (max-width:575px) {
     div.news_pic {
         height: 300px;
     }
@@ -316,18 +316,27 @@ a.dx_goread:hover {
     }
 }
 
+@media (max-width:575px) {
+    h2.dx {
+        font-size: 16px;
+    }
+    .pic.mv3 {
+        background-image: url(../news/news_img/dragen4.png);
+    }
+}
+
 @media (max-width:516px) {
     ul.news_about img {
         display: none;
     }
 }
 
-@media (max-width:376px) {
-    h2.dx {
-        font-size: 18px;
+@media (max-width:375px) {
+    h2.date {
+        font-size: 16px;
     }
-    .pic.mv3 {
-        background-image: url(../news/news_img/dragen4.png);
+    h2.date_april {
+        font-size: 16px;
     }
 }
 

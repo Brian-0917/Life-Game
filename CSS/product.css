@@ -148,9 +148,9 @@ li.slides_in i {
 .first {
     background-image: url(../product_img/main/village.jpg);
     background-size: cover;
-    color: rgb(204, 0, 0);
+    /* color: rgb(204, 0, 0);
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 600; */
 }
 
 .second {
@@ -250,25 +250,25 @@ li.slides_in i {
     }
 }
 
-@media (max-width:576px) {
+@media (max-width:680px) {
     div.slides ul.slides_in {
-        width: 250px;
+        width: 200px;
         margin: 0;
-        height: 350px;
+        height: 300px;
     }
     div.but_title {
-        width: 120px;
-        margin-right: 0px;
+        width: 140px;
+        margin-right: 5px;
         font-size: 14px;
     }
     div.controls-visible ul.rank li label {
-        width: 115px;
-        height: 60px;
+        width: 140px;
+        height: 80px;
         background-color: #eee;
-        margin-right: 0;
+        margin: 5px;
     }
-    div.slides_in span {
-        font-size: 12px;
+    ul.slides_in span {
+        font-size: 14px;
     }
     div.surch_block h1 {
         font-size: 24px;
@@ -436,7 +436,7 @@ i.las.la-hand-point-right {
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:1000px) {
     div.shop_item {
         grid-template-columns: 300px 300px;
     }

@@ -304,6 +304,12 @@ div.dlc_title {
     .news_main img {
         display: none;
     }
+    h2.dx {
+        font-size: 16px;
+    }
+    h2.date {
+        font-size: 16px;
+    }
 }
 
 .new_img {
