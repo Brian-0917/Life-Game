@@ -301,12 +301,6 @@ a.dx_goread:hover {
     }
 }
 
-@media (max-width:785px) {
-    h2.dx {
-        font-size: 20px;
-    }
-}
-
 @media (max-width:680px) {
     span.dx_inside {
         display: none;
@@ -331,21 +325,11 @@ a.dx_goread:hover {
     }
 }
 
-@media (max-width:375px) {
-    h2.date {
-        font-size: 16px;
-    }
-    h2.date_april {
-        font-size: 16px;
-    }
-}
-
 .like {
+    margin-top: 20px;
     /* width: 100%; */
-    /* text-align: right; */
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
+    text-align: right;
+    /* display: block; */
 }
 
 .like .las.la-heart {
@@ -359,6 +343,33 @@ a.dx_goread:hover {
     -moz-transition: color .20s linear;
     transition: color .20s linear;
     cursor: pointer;
+}
+
+@media (max-width:785px) {
+    h2.dx {
+        font-size: 24px;
+    }
+    a.dx_goread {
+        float: right;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    .like {
+        float: left;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:375px) {
+    h2.date {
+        font-size: 16px;
+    }
+    h2.date_april {
+        font-size: 16px;
+    }
+    h2.dx {
+        font-size: 16px;
+    }
 }
 
 .page_block {

@@ -270,7 +270,7 @@ div.dlc_title {
     padding: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
-    color: rgb(232, 1, 20);
+    color: rgb(60, 60, 60);
     text-align: center;
 }
 
@@ -364,7 +364,7 @@ div.dlc_title {
     padding: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
-    color: rgb(232, 1, 20);
+    color: rgb(60, 60, 60);
     text-align: center;
 }
 
@@ -461,14 +461,22 @@ a.dx_goread:hover {
     div.news_main span {
         display: none;
     }
+    h2.dx {
+        font-size: 22px;
+    }
+    a.dx_goread {
+        float: right;
+        font-size: 16px;
+    }
 }
 
 @media (max-width:376px) {
     h2.dx {
-        font-size: 16px;
+        font-size: 18px;
     }
     a.dx_goread {
         font-size: 16px;
+        float: right;
     }
 }
 

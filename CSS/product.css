@@ -248,7 +248,7 @@ li.slides_in i {
 
 @media (max-width:680px) {
     div.slides ul.slides_in {
-        width: 200px;
+        width: 250px;
         margin: 0;
         height: 300px;
     }
@@ -540,6 +540,12 @@ input {
     }
     .shop_typtwo li img {
         width: 150px;
+    }
+    .surch_block {
+        margin-top: 10px;
+    }
+    .rank_border {
+        height: 400px;
     }
 }
 

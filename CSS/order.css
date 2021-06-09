@@ -150,7 +150,7 @@
 
 .how_pay {
     width: 80%;
-    border: 1px solid rgb(6, 0, 34);
+    border: 1px solid gray;
     margin: 0 auto;
     margin-top: 30px;
     display: flex;

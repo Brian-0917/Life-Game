@@ -53,6 +53,20 @@ ul.items li {
     align-items: center;
 }
 
+.active {
+    color: red;
+    -o-transition: color .20s linear;
+    -webkit-transition: color .20s linear;
+    -moz-transition: color .20s linear;
+    transition: color .20s linear;
+    cursor: pointer;
+    border-bottom: 5px solid red;
+    -o-transition: border .20s linear;
+    -webkit-transition: border .20s linear;
+    -moz-transition: border .20s linear;
+    transition: border .20s linear;
+}
+
 .items a:hover {
     color: red;
     -o-transition: color .20s linear;
