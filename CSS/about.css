@@ -192,6 +192,7 @@
     .text_one img {
         height: 50%;
         line-height: 400px;
+        margin-left: 10px;
     }
     .text_one p {
         display: none;
