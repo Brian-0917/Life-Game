@@ -103,9 +103,6 @@
         display: block;
         height: 100%;
     }
-    .option p {
-        /* display: none; */
-    }
     .option li h1 {
         font-size: 20px;
     }

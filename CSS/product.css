@@ -251,6 +251,7 @@ li.slides_in i {
         width: 250px;
         margin: 0;
         height: 300px;
+        padding: 0;
     }
     div.but_title {
         width: 140px;
@@ -262,6 +263,7 @@ li.slides_in i {
         height: 80px;
         background-color: #eee;
         margin-right: 10px;
+        margin-left: 0;
     }
     ul.slides_in span {
         font-size: 14px;
