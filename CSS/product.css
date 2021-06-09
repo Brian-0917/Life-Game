@@ -248,7 +248,7 @@ li.slides_in i {
 
 @media (max-width:680px) {
     div.slides ul.slides_in {
-        width: 250px;
+        width: 200px;
         margin: 0;
         height: 300px;
         padding: 0;
