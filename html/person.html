@@ -9,44 +9,72 @@
     <link rel="stylesheet" href="../CSS/person.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="./JS/index.js"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="navi">
+            <!-- <a href="index.html">
+                <img class="top_logo" src="./logo/logo.png" alt="">
+            </a> -->
             <div class="logo">
-                <a href="../index.html">
+                <a href="../index.html" class="logo_link">
                     <img class="top_logo" src="../logo/logo.png" alt="">
                 </a>
             </div>
             <ul class="items">
                 <li class="news">
-                    <a href="../html/news.html">新聞</a>
+                    <a href="./news.html">新聞</a>
                 </li>
                 <li class="social">
-                    <a href="../html/product.html">最新商品</a>
+                    <a href="./product.html">最新商品</a>
                 </li>
-                <li class="sing active">
-                    <a href="./logoin.html">會員中心</a>
+                <li class="sing">
+                    <a class="active" href="./logoin.html">會員中心</a>
                 </li>
                 <li class="about">
                     <a href="./about.html">關於</a>
-                </li>
-                <li class="surfe">
-                    <a href="">客服中心</a>
                 </li>
             </ul>
             <div class="search_list">
                 <i class="las la-search"></i>
                 <input class="search_block" type="text" placeholder="搜尋商店">
+                <div class="person">
+                    <a href="./html/person.html"><i class="las la-user"></i></a></div>
+            </div>
+
+            <div id="nav">
+                <div class="bar but_top"></div>
+                <div class="bar middle"></div>
+                <div class="bar but_bottom"></div>
+
+            </div>
+            <div class="ul">
+                <ul class="items_other">
+                    <li class="news ">
+                        <a href="./news.html ">新聞</a>
+                    </li>
+                    <li class="social ">
+                        <a href="./product.html ">最新商品</a>
+                    </li>
+                    <li class="sing ">
+                        <a href="./logoin.html ">會員中心</a>
+                    </li>
+                    <li class="about ">
+                        <a href="./about.html ">關於</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
 
+
     <div class="container">
         <div class="rank">
             <ul>
-                <li>基本資料變更</li>
+                <li>基本資料</li>
                 <li>安全設定</li>
                 <li>願望清單</li>
                 <li>購買紀錄</li>
@@ -54,25 +82,30 @@
             </ul>
         </div>
         <div class="id_list">
-
             <div class="game_list">
                 <div class="id_img">
-                    <img src="../id/unnamed.png" alt="">
-                    <ul>
-                        <li>使用者帳戶:XXXXXXXX</li>
-                        <li>Email:XXX@XXX</li>
-                        <li>電話:09XXXXX</li>
-                        <li>聯絡地址:XXXXX</li>
-                    </ul>
+                    <div class="id_in">
 
+                        <img src="../id/unnamed.png" alt="">
+                        <ul>
+                            <li>帳號:XXXXX</li>
+                            <li>信箱:XXXXX</li>
+                            <li>地址:XXXXX</li>
+                            <li>電話:XXXXX</li>
+                        </ul>
+                    </div>
                     <div class="wallet">
                         <h2>電子錢包<i class="las la-wallet"></i></h2>
-                        <table>
+                        <ul>
+                            <li>點數:XXX</li>
+                            <li><button>立即充值</button></li>
+                        </ul>
+                        <!-- <table>
                             <tr>
                                 <td>剩餘點數:XXX</td>
                                 <td><button>立即充值</button></td>
                             </tr>
-                        </table>
+                        </table> -->
                     </div>
                 </div>
                 <h2 class="souko">個人遊戲庫</h2>
